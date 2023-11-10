@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="manifest" href="manifest.json">
+    <link rel="stylesheet" href="Estilos.css">
+    <link rel="icon" href="UTR.png">
+    <title>Exam</title>
+</head>
+<body>
+    <div>
+       <img class="call" src="callcenter.jpg" > 
+       <ul class="breadcrumb">
+        <li><a href="https://utrodeo.edu.mx/">UTRodeo</a></li>
+        <li><a href="Quejas.html">Quejas</a></li>
+        <li><a href="Servicios.html">Servicios Escolares</a></li>
+        <li><a class="active" href="https://www.facebook.com/universidadtecnologica.derodeo/?locale=es_LA">Facebook</a></li>
+      </ul>
+    </div>
+    <script>
+      if ('serviceWorker' in navigator) {
+          navigator.serviceWorker.register('./sw.js')
+            .then(function(registration) {
+              console.log('Service Worker registrado con éxito:', registration);
+            })
+            .catch(function(error) {
+              console.log('Error al registrar el Service Worker:', error);
+            });
+      }
+
+  </script>
+</body>
+</html>
